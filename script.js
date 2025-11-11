@@ -1,8 +1,9 @@
 let secondsElapsed = 0;
 let interval = null;
 const time = document.getElementById("time");
+
 function padStart(value) {
-    return String(value).padStart(2, '0');
+    return String(value).padStart(2, "0");
 }
 
 function setTime() {
@@ -22,12 +23,11 @@ function startClock() {
 }
 
 function stopClock() {
-    clearInterval(interval);
+    clearInterval(interval)
 }
 
 function resetClock() {
     stopClock();
     secondsElapsed = 0;
     setTime();
-
 }
